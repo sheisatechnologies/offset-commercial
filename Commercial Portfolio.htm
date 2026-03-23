@@ -74,23 +74,15 @@
 
 /* Logos */
 .logo-track img {
-    height: 60px;          /* fixed height → no stretch */
-    width: auto;
+    height: 60px;       /* same height */
+    width: auto;        /* no stretch */
     margin: 0 50px;
     object-fit: contain;
 
-    opacity: 0.6;
-    filter: grayscale(100%);
-    transition: all 0.4s ease;
+    opacity: 1;         /* full color */
 }
 
-/* Hover effect */
-.logo-track img:hover {
-    opacity: 1;
-    filter: grayscale(0%);
-}
-
-/* Smooth infinite animation */
+/* Smooth animation */
 @keyframes scroll {
     0% {
         transform: translateX(0);
@@ -100,7 +92,7 @@
     }
 }
 
-/* Gradient fade (premium look) */
+/* Soft fade edges (optional but premium) */
 .logo-slider::before,
 .logo-slider::after {
     content: "";
